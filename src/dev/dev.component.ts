@@ -13,7 +13,7 @@ export class DevComponent implements OnInit {
   public arrayLengthTest = ['ok'];
   public dateTest = { year: 2017, month: 10, day: 12 };
   public objProperty = { id: 1 };
-
+  a = /^[1][3,4,5,7,8][0-9]{9}$/;
   ngOnInit() {
     const password = new FormControl('', Validators.required);
     const certainPassword = new FormControl('', CustomValidators.notEqualTo(password));

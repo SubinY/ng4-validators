@@ -26,6 +26,8 @@ import { range } from './range/validator';
 import { rangeLength } from './range-length/validator';
 import { uuid } from './uuid/validator';
 import { url } from './url/validator';
+// custom
+import { phone } from './phone/validator';
 
 import { ArrayLengthValidator } from './array-length/directive';
 import { Base64Validator } from './base64/directive';
@@ -53,6 +55,9 @@ import { RangeValidator } from './range/directive';
 import { RangeLengthValidator } from './range-length/directive';
 import { UrlValidator } from './url/directive';
 import { UUIDValidator } from './uuid/directive';
+// custom
+import { PhoneValidator } from './phone/directive';
+
 
 export const CustomValidators = {
   arrayLength,
@@ -80,7 +85,8 @@ export const CustomValidators = {
   range,
   rangeLength,
   url,
-  uuid
+  uuid,
+  phone
 };
 
 const CustomDirectives = [
@@ -109,7 +115,8 @@ const CustomDirectives = [
   RangeValidator,
   RangeLengthValidator,
   UrlValidator,
-  UUIDValidator
+  UUIDValidator,
+  PhoneValidator
 ];
 
 @NgModule({

@@ -13,8 +13,8 @@
         <label class="col-3 control-label">minlength</label>
   
         <div class="col-9">
-          <input class="form-control" type="text" ngModel name="minlength" #minlength="ngModel" minlength="5">
-          <p class="alert alert-danger" *ngIf="minlength?.errors?.minlength">minlength error</p>
+          <input class="form-control" type="text" ngModel name="minlength1" #minlength="ngModel" minlength="5">
+          <p class="alert alert-danger" *ngIf="minlength1?.errors?.minlength">minlength error</p>
         </div>
       </div>
   
@@ -277,6 +277,14 @@
         <div class="col-9">
           <input class="form-control" type="text" [(ngModel)]="arrayLengthTest" name="arrayLength" #arrayLength="ngModel" arrayLength="2">
           <p class="alert alert-danger" *ngIf="arrayLength?.errors?.arrayLength">arrayLength error</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-3 control-label">phone</label>
+        <div class="col-9">
+          <input class="form-control" type="text" ngModel name="phone">
+          <p class="alert alert-danger" *ngIf="phone?.errors?.phone">phone</p>
         </div>
       </div>
     </form>
